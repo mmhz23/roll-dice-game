@@ -54,8 +54,8 @@ btnRoll.addEventListener("click", function () {
   // 1. Generate a random dice roll
   const dice = Math.trunc(Math.random() * 6) + 1;
   // 2. Display the dice image
-  diceEl.classList.remove("hidden");
   diceEl.src = `img/dice-${dice}.png`;
+  diceEl.classList.remove("hidden");
 
   // 3. Check if the roll is not 1
   if (dice !== 1) {
